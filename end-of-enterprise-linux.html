@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>The self abolishment of the enterprise Linux Distribution</title>
+<meta name="author" content="Dan Čermák"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./node_modules/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="./node_modules/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
+
+<link rel="stylesheet" href="./custom-style.css"/>
+<link rel="stylesheet" href="./node_modules/reveal.js/plugin/highlight/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './node_modules/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="title">The self abolishment of the enterprise Linux Distribution</h2>
+<p class="subtitle" style="color: Gray;"></p>
+<p class="author">Dan Čermák</p>
+<div style="float:left"><a href="https://connect.centos.org/" target="_blank"><img src="./media/Centos-logo-2022.svg" height="50px"/> Connect 2024</a></div>
+<div style="float:right;font-size:35px;"><p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#"><a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i></a></p></div>
+</section>
+
+<section>
+<section id="slide-org8aa7f86">
+<h2 id="org8aa7f86">who -u</h2>
+<p>
+Dan Čermák
+</p>
+
+<p>
+ <div style="float:center">
+ <table class="who-table">
+ <tr><td><i class="fab fa-suse"></i></td><td> Software Developer @SUSE, SLE BCI releng</td></tr>
+ <tr><td><i class="fab fa-fedora"></i></td><td> i3 SIG, Package maintainer</td></tr>
+ <tr><td><i class="far fa-heart"></i></td><td> Developer Tools, Testing and Documentation, Home Automation</td></tr>
+ <tr></tr>
+ <tr></tr>
+ <tr><td><i class="fa-solid fa-globe"></i></td><td> <a href="https://dancermak.name/">https://dancermak.name</a></td></tr>
+ <tr><td><i class="fab fa-github"></i></td><td> <a href="https://github.com/dcermak/">dcermak</a></td></tr>
+ <tr><td><i class="fab fa-mastodon"></i></td><td> <a href="https://mastodon.social/@Defolos">@Defolos@mastodon.social</a></td></tr>
+ </table>
+ </div>
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgfc66247">
+<h2 id="orgfc66247"><span class="todo TODO">TODO</span> Agenda</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org81e673b">
+<h2 id="org81e673b">Where did we start?</h2>
+<ul>
+<li class="fragment appear">Pet servers</li>
+<li class="fragment appear">Software runs from system packages</li>
+<li class="fragment appear">long development cycles</li>
+<li class="fragment appear">setup, never touch again &amp; forget machines</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgbb92446">
+<h2 id="orgbb92446">Where are we now?</h2>
+<ul>
+<li data-fragment-index="1" class="fragment appear">Cattle servers</li>
+<li>Rapid development</li>
+<li>Much larger dependency tree</li>
+<li>Container deployment</li>
+
+</ul>
+
+<p data-fragment-index="(5)" class="fragment (appear)">
+<b>but</b> "the old way" is still there
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org4d65c90">
+<h2 id="org4d65c90">What's the problem?</h2>
+<ul>
+<li data-fragment-index="1" class="fragment appear">LTS maintenance harder/more expensive</li>
+
+</ul>
+
+<p data-fragment-index="(2)" class="fragment (appear)">
+&rarr; reduce package set
+</p>
+
+<p data-fragment-index="(3)" class="fragment (appear)">
+&rarr; update packages during LTS
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org1b00a1b">
+<h2 id="org1b00a1b">The vicious cycle</h2>
+<ol>
+<li class="fragment appear">fewer and outdated packages + missing dependencies</li>
+<li class="fragment appear">less interesting development target</li>
+<li class="fragment appear">less interesting deployment target</li>
+
+</ol>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org08b9b09">
+<h2 id="org08b9b09">Containers to the rescue!</h2>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org5feb0be">
+<h2 id="org5feb0be">Modularity to the rescue!</h2>
+<p>
+<img src="./media/lego-distro.svg"/>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org1ceac69">
+<h2 id="org1ceac69">Questions?</h2>
+<p class="fragment (appear)">
+Answers!
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="./node_modules/reveal.js/dist/reveal.js"></script>
+<script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealHighlight, RevealNotes, history],
+transition: 'none', hash: true
+});
+
+</script>
+</body>
+</html>
