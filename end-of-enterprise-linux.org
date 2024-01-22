@@ -2,8 +2,7 @@
 #+AUTHOR: Dan Čermák
 #+DATE: February 2, 2024
 #+EMAIL: dcermak@suse.com
-#+TITLE: The self abolishment of the enterprise Linux Distribution
-# #+SUBTITLE: Testing Container Images with Python and Pytest
+#+TITLE: The self-abolition of Enterprise Linux Distributions
 
 #+REVEAL_ROOT: ./node_modules/reveal.js/
 #+REVEAL_THEME: simple

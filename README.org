@@ -1,8 +1,10 @@
-* The self abolishment of the enterprise Linux Distribution
+* The self-abolition of Enterprise Linux Distributions
 
-This repository contains the slides for the presentation "The self abolishment of the enterprise Linux Distribution" held at CentOS Connect 2024.
+This repository contains the slides for the presentation [[https://connect.centos.org/#selfabolition]["The self-abolition of
+Enterprise Linux Distributions"]] held at CentOS Connect 2024.
 
-You can find the rendered slides here: [[https://dcermak.github.io/self-abolishment-of-enterprise-linux-distro/end-of-enterprise-linux.html][dcermak.github.io/self-abolishment-of-enterprise-linux-distro]].
+You can find the rendered slides here:
+[[https://dcermak.github.io/self-abolishment-of-enterprise-linux-distro/end-of-enterprise-linux.html][dcermak.github.io/self-abolishment-of-enterprise-linux-distro]].
 
 
 ** Building the slides
