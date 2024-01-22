@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>The self abolishment of the enterprise Linux Distribution</title>
+<title>The self-abolition of Enterprise Linux Distributions</title>
 <meta name="author" content="Dan Čermák"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -31,17 +31,17 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="title">The self abolishment of the enterprise Linux Distribution</h2>
+<section id="sec-title-slide"><h2 class="title">The self-abolition of Enterprise Linux Distributions</h2>
 <p class="subtitle" style="color: Gray;"></p>
 <p class="author">Dan Čermák</p>
-<div style="float:left"><a href="https://connect.centos.org/" target="_blank"><img src="./media/Centos-logo-2022.svg" height="50px"/> Connect 2024</a></div>
+<div style="float:left"><a href="https://connect.centos.org/" target="_blank"><img src="./media/Centos-logo-2022.svg" height="50px" style="margin-bottom:-12px"/> Connect 2024</a></div>
 <div style="float:right;font-size:35px;"><p xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#"><a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
 CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i></a></p></div>
 </section>
 
 <section>
-<section id="slide-org8aa7f86">
-<h2 id="org8aa7f86">who -u</h2>
+<section id="slide-org9402385">
+<h2 id="org9402385">who -u</h2>
 <p>
 Dan Čermák
 </p>
@@ -65,14 +65,14 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-orgfc66247">
-<h2 id="orgfc66247"><span class="todo TODO">TODO</span> Agenda</h2>
+<section id="slide-orgf494050">
+<h2 id="orgf494050"><span class="todo TODO">TODO</span> Agenda</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org81e673b">
-<h2 id="org81e673b">Where did we start?</h2>
+<section id="slide-orge20ab5f">
+<h2 id="orge20ab5f">Where did we start?</h2>
 <ul>
 <li class="fragment appear">Pet servers</li>
 <li class="fragment appear">Software runs from system packages</li>
@@ -85,13 +85,13 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-orgbb92446">
-<h2 id="orgbb92446">Where are we now?</h2>
+<section id="slide-org9bee0ef">
+<h2 id="org9bee0ef">Where are we now?</h2>
 <ul>
 <li data-fragment-index="1" class="fragment appear">Cattle servers</li>
-<li>Rapid development</li>
-<li>Much larger dependency tree</li>
-<li>Container deployment</li>
+<li data-fragment-index="2" class="fragment appear">Rapid development</li>
+<li data-fragment-index="3" class="fragment appear">Much larger dependency tree</li>
+<li data-fragment-index="4" class="fragment appear">Container deployment</li>
 
 </ul>
 
@@ -103,27 +103,31 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-org4d65c90">
-<h2 id="org4d65c90">What's the problem?</h2>
-<ul>
-<li data-fragment-index="1" class="fragment appear">LTS maintenance harder/more expensive</li>
+<section id="slide-orga454806">
+<h2 id="orga454806">What's the problem?</h2>
+<ul data-fragment-index="1" class="fragment appear">
+<li>LTS maintenance harder/more expensive</li>
 
 </ul>
 
-<p data-fragment-index="(2)" class="fragment (appear)">
+<p data-fragment-index="2" class="fragment appear">
 &rarr; reduce package set
 </p>
 
-<p data-fragment-index="(3)" class="fragment (appear)">
+<p data-fragment-index="3" class="fragment appear">
 &rarr; update packages during LTS
 </p>
 
+<ul data-fragment-index="4" class="fragment appear">
+<li>We cannot package the world</li>
+
+</ul>
 
 </section>
 </section>
 <section>
-<section id="slide-org1b00a1b">
-<h2 id="org1b00a1b">The vicious cycle</h2>
+<section id="slide-org6be38e1">
+<h2 id="org6be38e1">The vicious cycle</h2>
 <ol>
 <li class="fragment appear">fewer and outdated packages + missing dependencies</li>
 <li class="fragment appear">less interesting development target</li>
@@ -133,26 +137,127 @@ Dan Čermák
 
 
 </section>
-</section>
-<section>
-<section id="slide-org08b9b09">
-<h2 id="org08b9b09">Containers to the rescue!</h2>
+<section id="slide-orgce9c17d">
+<h3 id="orgce9c17d">Containers to the rescue!</h3>
+<p>
+<img src="./media/container-superhero.png"/>
+</p>
 
 
 </section>
-</section>
-<section>
-<section id="slide-org5feb0be">
-<h2 id="org5feb0be">Modularity to the rescue!</h2>
+<section id="slide-orgbf40c52">
+<h3 id="orgbf40c52">Modularity to the rescue!</h3>
 <p>
 <img src="./media/lego-distro.svg"/>
 </p>
 
 </section>
+<section id="slide-orgbf40c52-split">
+
+<p>
+<img src="./media/factory-ring0.png"/>
+</p>
+
+
+</section>
+<section id="slide-orge8ce367">
+<h3 id="orge8ce367">So should we just give up?</h3>
+<p data-fragment-index="1" class="fragment appear">
+But we are still adding value
+</p>
+
+<div class="org-src-container">
+
+<pre  class="fragment appear" data-fragment-index="2"  ><code class="console" >❯ podman run --rm -it docker.io/aquasec/trivy \
+    image docker.io/library/golang:1.21
+
+docker.io/library/golang:1.21 (debian 12.4)
+
+Total: 349 (UNKNOWN: 0, LOW: 245, MEDIUM: 74, HIGH: 29, CRITICAL: 1)
+</code></pre>
+</div>
+
+</section>
+<section id="slide-orge8ce367-split">
+
+<div class="org-src-container">
+
+<pre   ><code class="console" >❯ podman run --rm -it docker.io/aquasec/trivy \
+    image registry.suse.com/bci/golang:1.21
+
+registry.suse.com/bci/golang:1.21 (suse linux enterprise server 15.5)
+
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org78ba21f">
+<h3 id="org78ba21f">Integrations</h3>
+<p>
+<table><tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>
+<td align="center" valign="middle"><img src="media/uyuni-logo.svg" height="100px"/></td>
+</p>
+
+<p>
+<tr><td align="center" valign="middle"><img src="media/rancher-suse-logo-horizontal-color.svg" height="100px"/></td>
+<td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td></tr></table>
+</p>
+
+
+</section>
 </section>
 <section>
-<section id="slide-org1ceac69">
-<h2 id="org1ceac69">Questions?</h2>
+<section id="slide-orge84d7b0">
+<h2 id="orge84d7b0">Ways forward?</h2>
+<div class="outline-text-2" id="text-orge84d7b0">
+</div>
+</section>
+<section id="slide-org85aabda">
+<h3 id="org85aabda">Devtools</h3>
+
+</section>
+<section id="slide-orgcccf985">
+<h3 id="orgcccf985">Limited Modularity</h3>
+<aside class="notes">
+<ul>
+<li>prohibit dependency explosion by "bundling" language stacks</li>
+<li>allows to reduce maintenance effort</li>
+
+</ul>
+
+</aside>
+
+<p>
+<img src="media/limited-modules-distro.svg"/>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb55293c">
+<h2 id="orgb55293c">Commercial Break</h2>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgfa09a6c">
+<h2 id="orgfa09a6c">Links</h2>
+<p>
+<i class="fa-solid fa-person-chalkboard"></i> <a href="https://github.com/dcermak/self-abolishment-of-enterprise-linux-distro"><code>github.com/dcermak/self-abolishment-of-enterprise-linux-distro</code></a>
+</p>
+
+<p>
+<img src="media/presentation_url_qr.svg" heigh="150%"/>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org688f701">
+<h2 id="org688f701">Questions?</h2>
 <p class="fragment (appear)">
 Answers!
 </p>
