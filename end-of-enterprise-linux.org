@@ -53,7 +53,7 @@ Dan Čermák
 
 * Where are we now?
 
-#+ATTR_REVEAL: :frag (appear) :frag_idx (1 2 3 4)
+#+ATTR_REVEAL: :frag (appear appear appear appear) :frag_idx (1 2 3 4)
 - Cattle servers
 - Rapid development
 - Much larger dependency tree
@@ -65,15 +65,17 @@ Dan Čermák
 
 * What's the problem?
 
-#+ATTR_REVEAL: :frag (appear) :frag_idx (1)
+#+ATTR_REVEAL: :frag appear :frag_idx 1
 - LTS maintenance harder/more expensive
 
-#+ATTR_REVEAL: :frag (appear) :frag_idx (2)
+#+ATTR_REVEAL: :frag appear :frag_idx 2
 \rightarrow reduce package set
 
-#+ATTR_REVEAL: :frag (appear) :frag_idx (3)
+#+ATTR_REVEAL: :frag appear :frag_idx 3
 \rightarrow update packages during LTS
 
+#+ATTR_REVEAL: :frag appear :frag_idx 4
+- We cannot package the world
 
 * The vicious cycle
 
