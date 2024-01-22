@@ -85,12 +85,77 @@ Dan Čermák
 3. less interesting deployment target
 
 
-* Containers to the rescue!
+** Containers to the rescue!
+
+@@html:<img src="./media/container-superhero.png"/>@@
 
 
-* Modularity to the rescue!
+** Modularity to the rescue!
 
 @@html:<img src="./media/lego-distro.svg"/>@@
+
+#+REVEAL: split
+
+@@html:<img src="./media/factory-ring0.png"/>@@
+
+
+** So should we just give up?
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+But we are still adding value
+
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+#+begin_src console
+❯ podman run --rm -it docker.io/aquasec/trivy \
+    image docker.io/library/golang:1.21
+
+docker.io/library/golang:1.21 (debian 12.4)
+
+Total: 349 (UNKNOWN: 0, LOW: 245, MEDIUM: 74, HIGH: 29, CRITICAL: 1)
+#+end_src
+
+#+REVEAL: split
+
+#+begin_src console
+❯ podman run --rm -it docker.io/aquasec/trivy \
+    image registry.suse.com/bci/golang:1.21
+
+registry.suse.com/bci/golang:1.21 (suse linux enterprise server 15.5)
+
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+#+end_src
+
+** Integrations
+
+@@html:<table><tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>@@
+@@html:<td align="center" valign="middle"><img src="media/uyuni-logo.svg" height="100px"/></td>@@
+
+@@html:<tr><td align="center" valign="middle"><img src="media/rancher-suse-logo-horizontal-color.svg" height="100px"/></td>@@
+@@html:<td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td></tr></table>@@
+
+
+* Ways forward?
+
+** Devtools
+
+** Limited Modularity
+
+#+begin_notes
+- prohibit dependency explosion by "bundling" language stacks
+- allows to reduce maintenance effort
+#+end_notes
+
+@@html:<img src="media/limited-modules-distro.svg"/>@@
+
+* Commercial Break
+
+
+
+* Links
+
+@@html:<i class="fa-solid fa-person-chalkboard"></i>@@ [[https://github.com/dcermak/self-abolishment-of-enterprise-linux-distro][=github.com/dcermak/self-abolishment-of-enterprise-linux-distro=]]
+
+@@html:<img src="media/presentation_url_qr.svg" heigh="150%"/>@@
 
 * Questions?
 
