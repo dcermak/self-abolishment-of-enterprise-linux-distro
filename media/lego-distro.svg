@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96.002014mm"
+   height="56.827259mm"
+   viewBox="0 0 96.002014 56.827259"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="lego-distro.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.4570458"
+     inkscape:cx="93.14311"
+     inkscape:cy="66.530793"
+     inkscape:window-width="2876"
+     inkscape:window-height="1576"
+     inkscape:window-x="1920"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.805006,-113.97979)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.428096"
+       id="rect1"
+       width="95.573921"
+       height="12.845413"
+       x="33.019054"
+       y="157.74759"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.75;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+       x="81.338562"
+       y="166.47502"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+         x="81.338562"
+         y="166.47502">Base OS</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.428096"
+       id="rect1-8"
+       width="95.573921"
+       height="12.845413"
+       x="33.019054"
+       y="114.19384"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.75;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+       x="81.338562"
+       y="122.92127"
+       id="text1-19"><tspan
+         sodipodi:role="line"
+         id="tspan1-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+         x="81.338562"
+         y="122.92127">PostgreSQL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.75;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+       x="55.354027"
+       y="135.99159"
+       id="text1-1"><tspan
+         sodipodi:role="line"
+         id="tspan1-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+         x="55.354027"
+         y="135.99159">Python 3.11</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.428096"
+       id="rect1-2"
+       width="45.321335"
+       height="12.845413"
+       x="33.019054"
+       y="127.052"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.75;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+       x="103.33062"
+       y="135.99159"
+       id="text1-1-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-7-4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+         x="103.33062"
+         y="135.99159">OpenJDK 18</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.428096"
+       id="rect1-2-9"
+       width="50.241238"
+       height="12.845413"
+       x="78.3498"
+       y="127.052"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.75;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+       x="48.201378"
+       y="148.84299"
+       id="text1-1-4"><tspan
+         sodipodi:role="line"
+         id="tspan1-7-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+         x="48.201378"
+         y="148.84299">gcc 12</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.428096"
+       id="rect1-2-94"
+       width="29.82634"
+       height="12.845413"
+       x="33.019054"
+       y="139.9034"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.75;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+       x="96.111694"
+       y="148.84299"
+       id="text1-1-5-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-7-4-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Comfortaa;-inkscape-font-specification:Comfortaa;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.428096"
+         x="96.111694"
+         y="148.84299">openSSL 3</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.428096"
+       id="rect1-2-9-3"
+       width="65.744682"
+       height="12.845413"
+       x="62.846352"
+       y="139.9034"
+       ry="0" />
+  </g>
+</svg>
