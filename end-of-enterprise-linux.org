@@ -59,7 +59,7 @@ Dan Čermák
 - Much larger dependency tree
 - Container deployment
 
-#+ATTR_REVEAL: :frag (appear) :frag_idx (5)
+#+ATTR_REVEAL: :frag appear :frag_idx 5
 *but* "the old way" is still there
 
 
@@ -81,8 +81,10 @@ Dan Čermák
 
 #+ATTR_REVEAL: :frag (appear)
 1. fewer and outdated packages + missing dependencies
-2. less interesting development target
-3. less interesting deployment target
+2. fewer users
+3. less interesting development target
+4. less interesting deployment target
+5. =GOTO 1=
 
 
 ** Containers to the rescue!
@@ -92,6 +94,7 @@ Dan Čermák
 
 ** Modularity to the rescue!
 
+#+ATTR_REVEAL: :frag appear :frag_idx 1
 @@html:<img src="./media/lego-distro.svg"/>@@
 
 #+REVEAL: split
@@ -125,39 +128,78 @@ registry.suse.com/bci/golang:1.21 (suse linux enterprise server 15.5)
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 #+end_src
 
-** Integrations
 
+** Integrations & Support
+
+# #+ATTR_REVEAL: :frag appear :frag_idx 1
 @@html:<table><tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>@@
 @@html:<td align="center" valign="middle"><img src="media/uyuni-logo.svg" height="100px"/></td>@@
-
 @@html:<tr><td align="center" valign="middle"><img src="media/rancher-suse-logo-horizontal-color.svg" height="100px"/></td>@@
-@@html:<td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td></tr></table>@@
+@@html:<td align="center" valign="middle"><img src="media/juju-logo.svg" height="100px"/></td></tr></table>@@
+
+
+** Build Tools
+
+@@html:<table><tr><td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td>@@
+@@html:<td align="center" valign="middle"><img src="media/obs-logo.svg" height="100px"/></td></tr></table>@@
 
 
 * Ways forward?
 
+@@html:<img src="media/way-forward.png" width="500px"/>@@
+
 ** Devtools
+
+#+begin_notes
+- Ubuntu won by capturing all devs \Rightarrow have to ensure all tools are there
+- trusted development tools are crucial for supply chain security
+- why is there no gradle in RHEL/SLES??
+- need to get devtools
+- maintain critical libraries & dependencies
+#+end_notes
+
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+Focus on development tools!
+
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+@@html:<img src="media/lookaside-registry.svg"/>@@
+
 
 ** Limited Modularity
 
 #+begin_notes
-- prohibit dependency explosion by "bundling" language stacks
+- prohibit testing matrix "explosion" by combining language stacks together
 - allows to reduce maintenance effort
 #+end_notes
 
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+Modularity again?
+
+#+ATTR_REVEAL: :frag appear :frag_idx 2
 @@html:<img src="media/limited-modules-distro.svg"/>@@
+
 
 * Commercial Break
 
+#+ATTR_REVEAL: :frag appear :frag_idx 1
+Do you have to edit RPM Spec files?
+
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+Annoyed by poor editor support?
+
+#+ATTR_REVEAL: :frag appear :frag_idx 3
+👉 @@html:<i class="fa-brands fa-github"></i>@@ [[https://github.com/dcermak/rpm-spec-language-server][=rpm-spec-language-server=]]
+
+#+ATTR_REVEAL: :frag appear :frag_idx 3
+@@html:<img src="media/langserver-url.svg" heigh="150%"/>@@
 
 
 * Links
 
-@@html:<i class="fa-solid fa-person-chalkboard"></i>@@ [[https://github.com/dcermak/self-abolishment-of-enterprise-linux-distro][=github.com/dcermak/self-abolishment-of-enterprise-linux-distro=]]
-
 @@html:<img src="media/presentation_url_qr.svg" heigh="150%"/>@@
 
-* Questions?
+@@html:<i class="fa-solid fa-person-chalkboard"></i>@@ [[https://github.com/dcermak/self-abolishment-of-enterprise-linux-distro][=github.com/dcermak/self-abolishment-of-enterprise-linux-distro=]]
 
-#+ATTR_REVEAL: :frag (appear)
-Answers!
+@@html:<i class="fa-brands fa-github"></i>@@ [[https://github.com/openSUSE/npm-localhost-proxy][=openSUSE/npm-localhost-proxy=]]
+
+* Questions? / Discussion
