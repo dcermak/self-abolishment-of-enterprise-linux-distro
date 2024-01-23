@@ -40,7 +40,13 @@ Dan Čermák
 @@html: </div>@@
 
 
-* TODO Agenda
+* Agenda
+
+  - [[Where are we now?][Where are we now?]]
+  - [[The vicious cycle][The vicious cycle]]
+  - [[Ways forward?][Ways forward?]]
+  - [[Questions? / Discussion][Questions? / Discussion]]
+
 
 * Where did we start?
 
