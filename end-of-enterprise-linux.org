@@ -87,7 +87,7 @@ Dan Čermák
 
 ** Containers to the rescue!
 
-@@html:<img src="./media/container-superhero.png"/>@@
+@@html:<img src="./media/the-pod-man.png" height="500px"/>@@
 
 
 ** Modularity to the rescue!
