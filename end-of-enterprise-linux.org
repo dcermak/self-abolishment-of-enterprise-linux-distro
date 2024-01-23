@@ -131,8 +131,8 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 
 ** Integrations & Support
 
-# #+ATTR_REVEAL: :frag appear :frag_idx 1
-@@html:<table><tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>@@
+@@html:<table class="fragment appear" data-fragment-index="0">@@
+@@html:<tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>@@
 @@html:<td align="center" valign="middle"><img src="media/uyuni-logo.svg" height="100px"/></td>@@
 @@html:<tr><td align="center" valign="middle"><img src="media/rancher-suse-logo-horizontal-color.svg" height="100px"/></td>@@
 @@html:<td align="center" valign="middle"><img src="media/juju-logo.svg" height="100px"/></td></tr></table>@@
@@ -140,7 +140,8 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 
 ** Build Tools
 
-@@html:<table><tr><td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td>@@
+@@html:<table class="fragment appear" data-fragment-index="0">@@
+@@html:<tr><td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td>@@
 @@html:<td align="center" valign="middle"><img src="media/obs-logo.svg" height="100px"/></td></tr></table>@@
 
 
