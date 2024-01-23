@@ -40,8 +40,8 @@ CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-comm
 </section>
 
 <section>
-<section id="slide-orge0e55e0">
-<h2 id="orge0e55e0">who -u</h2>
+<section id="slide-orgc6ae4cf">
+<h2 id="orgc6ae4cf">who -u</h2>
 <p>
 Dan Čermák
 </p>
@@ -65,14 +65,14 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-org3ebcfd5">
-<h2 id="org3ebcfd5"><span class="todo TODO">TODO</span> Agenda</h2>
+<section id="slide-org2da6374">
+<h2 id="org2da6374"><span class="todo TODO">TODO</span> Agenda</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org740445f">
-<h2 id="org740445f">Where did we start?</h2>
+<section id="slide-org1b0eeec">
+<h2 id="org1b0eeec">Where did we start?</h2>
 <ul>
 <li class="fragment appear">Pet servers</li>
 <li class="fragment appear">Software runs from system packages</li>
@@ -85,8 +85,8 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-org8dcdb89">
-<h2 id="org8dcdb89">Where are we now?</h2>
+<section id="slide-org622897f">
+<h2 id="org622897f">Where are we now?</h2>
 <ul>
 <li data-fragment-index="1" class="fragment appear">Cattle servers</li>
 <li data-fragment-index="2" class="fragment appear">Rapid development</li>
@@ -95,7 +95,7 @@ Dan Čermák
 
 </ul>
 
-<p data-fragment-index="(5)" class="fragment (appear)">
+<p data-fragment-index="5" class="fragment appear">
 <b>but</b> "the old way" is still there
 </p>
 
@@ -103,8 +103,8 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-orgec906fa">
-<h2 id="orgec906fa">What's the problem?</h2>
+<section id="slide-orgb02b8b8">
+<h2 id="orgb02b8b8">What's the problem?</h2>
 <ul data-fragment-index="1" class="fragment appear">
 <li>LTS maintenance harder/more expensive</li>
 
@@ -126,33 +126,35 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-org79619ee">
-<h2 id="org79619ee">The vicious cycle</h2>
+<section id="slide-org9d3ff55">
+<h2 id="org9d3ff55">The vicious cycle</h2>
 <ol>
 <li class="fragment appear">fewer and outdated packages + missing dependencies</li>
+<li class="fragment appear">fewer users</li>
 <li class="fragment appear">less interesting development target</li>
 <li class="fragment appear">less interesting deployment target</li>
+<li class="fragment appear"><code>GOTO 1</code></li>
 
 </ol>
 
 
 </section>
-<section id="slide-orge38ef33">
-<h3 id="orge38ef33">Containers to the rescue!</h3>
+<section id="slide-orgd224299">
+<h3 id="orgd224299">Containers to the rescue!</h3>
 <p>
 <img src="./media/the-pod-man.png" height="500px"/>
 </p>
 
 
 </section>
-<section id="slide-orgcea7f5a">
-<h3 id="orgcea7f5a">Modularity to the rescue!</h3>
-<p>
+<section id="slide-org7a46139">
+<h3 id="org7a46139">Modularity to the rescue!</h3>
+<p data-fragment-index="1" class="fragment appear">
 <img src="./media/lego-distro.svg"/>
 </p>
 
 </section>
-<section id="slide-orgcea7f5a-split">
+<section id="slide-org7a46139-split">
 
 <p>
 <img src="./media/factory-ring0.png"/>
@@ -160,8 +162,8 @@ Dan Čermák
 
 
 </section>
-<section id="slide-org09a63b5">
-<h3 id="org09a63b5">So should we just give up?</h3>
+<section id="slide-orgf1dee68">
+<h3 id="orgf1dee68">So should we just give up?</h3>
 <p data-fragment-index="1" class="fragment appear">
 But we are still adding value
 </p>
@@ -178,7 +180,7 @@ Total: 349 (UNKNOWN: 0, LOW: 245, MEDIUM: 74, HIGH: 29, CRITICAL: 1)
 </div>
 
 </section>
-<section id="slide-org09a63b5-split">
+<section id="slide-orgf1dee68-split">
 
 <div class="org-src-container">
 
@@ -191,76 +193,125 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 </code></pre>
 </div>
 
+
 </section>
-<section id="slide-orga7b260a">
-<h3 id="orga7b260a">Integrations</h3>
+<section id="slide-org3038ab2">
+<h3 id="org3038ab2">Integrations &amp; Support</h3>
 <p>
 <table><tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>
 <td align="center" valign="middle"><img src="media/uyuni-logo.svg" height="100px"/></td>
+<tr><td align="center" valign="middle"><img src="media/rancher-suse-logo-horizontal-color.svg" height="100px"/></td>
+<td align="center" valign="middle"><img src="media/juju-logo.svg" height="100px"/></td></tr></table>
 </p>
 
+
+</section>
+<section id="slide-org7b0bdc9">
+<h3 id="org7b0bdc9">Build Tools</h3>
 <p>
-<tr><td align="center" valign="middle"><img src="media/rancher-suse-logo-horizontal-color.svg" height="100px"/></td>
-<td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td></tr></table>
+<table><tr><td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td>
+<td align="center" valign="middle"><img src="media/obs-logo.svg" height="100px"/></td></tr></table>
 </p>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org630c492">
-<h2 id="org630c492">Ways forward?</h2>
-<div class="outline-text-2" id="text-org630c492">
-</div>
-</section>
-<section id="slide-orgca2d5ef">
-<h3 id="orgca2d5ef">Devtools</h3>
+<section id="slide-org42b82f2">
+<h2 id="org42b82f2">Ways forward?</h2>
+<p>
+<img src="media/way-forward.png" width="500px"/>
+</p>
 
 </section>
-<section id="slide-org9d5952c">
-<h3 id="org9d5952c">Limited Modularity</h3>
+<section id="slide-orgaf08a4b">
+<h3 id="orgaf08a4b">Devtools</h3>
 <aside class="notes">
 <ul>
-<li>prohibit dependency explosion by "bundling" language stacks</li>
+<li>Ubuntu won by capturing all devs &rArr; have to ensure all tools are there</li>
+<li>trusted development tools are crucial for supply chain security</li>
+<li>why is there no gradle in RHEL/SLES??</li>
+<li>need to get devtools</li>
+<li>maintain critical libraries &amp; dependencies</li>
+
+</ul>
+
+</aside>
+
+<p data-fragment-index="1" class="fragment appear">
+Focus on development tools!
+</p>
+
+<p data-fragment-index="2" class="fragment appear">
+<img src="media/lookaside-registry.svg"/>
+</p>
+
+
+</section>
+<section id="slide-orgde3903b">
+<h3 id="orgde3903b">Limited Modularity</h3>
+<aside class="notes">
+<ul>
+<li>prohibit testing matrix "explosion" by combining language stacks together</li>
 <li>allows to reduce maintenance effort</li>
 
 </ul>
 
 </aside>
 
-<p>
+<p data-fragment-index="1" class="fragment appear">
+Modularity again?
+</p>
+
+<p data-fragment-index="2" class="fragment appear">
 <img src="media/limited-modules-distro.svg"/>
 </p>
 
-</section>
-</section>
-<section>
-<section id="slide-org4873b6f">
-<h2 id="org4873b6f">Commercial Break</h2>
-
-
 
 </section>
 </section>
 <section>
-<section id="slide-orgb52954d">
-<h2 id="orgb52954d">Links</h2>
+<section id="slide-org50578b8">
+<h2 id="org50578b8">Commercial Break</h2>
+<p data-fragment-index="1" class="fragment appear">
+Do you have to edit RPM Spec files?
+</p>
+
+<p data-fragment-index="2" class="fragment appear">
+Annoyed by poor editor support?
+</p>
+
+<p data-fragment-index="3" class="fragment appear">
+👉 <i class="fa-brands fa-github"></i> <a href="https://github.com/dcermak/rpm-spec-language-server" data-fragment-index="3" class="fragment appear"><code>rpm-spec-language-server</code></a>
+</p>
+
+<p data-fragment-index="3" class="fragment appear">
+<img src="media/langserver-url.svg" heigh="150%"/>
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org493330a">
+<h2 id="org493330a">Links</h2>
+<p>
+<img src="media/presentation_url_qr.svg" heigh="150%"/>
+</p>
+
 <p>
 <i class="fa-solid fa-person-chalkboard"></i> <a href="https://github.com/dcermak/self-abolishment-of-enterprise-linux-distro"><code>github.com/dcermak/self-abolishment-of-enterprise-linux-distro</code></a>
 </p>
 
 <p>
-<img src="media/presentation_url_qr.svg" heigh="150%"/>
+<i class="fa-brands fa-github"></i> <a href="https://github.com/openSUSE/npm-localhost-proxy"><code>openSUSE/npm-localhost-proxy</code></a>
 </p>
 
 </section>
 </section>
 <section>
-<section id="slide-orgc9e9ac8">
-<h2 id="orgc9e9ac8">Questions?</h2>
-<p class="fragment (appear)">
-Answers!
-</p>
+<section id="slide-org43ad61b">
+<h2 id="org43ad61b">Questions? / Discussion</h2>
 </section>
 </section>
 </div>
