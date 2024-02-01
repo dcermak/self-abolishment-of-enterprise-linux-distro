@@ -198,12 +198,12 @@ Annoyed by poor editor support?
 👉 @@html:<i class="fa-brands fa-github"></i>@@ [[https://github.com/dcermak/rpm-spec-language-server][=rpm-spec-language-server=]]
 
 #+ATTR_REVEAL: :frag appear :frag_idx 3
-@@html:<img src="media/langserver-url.svg" heigh="150%"/>@@
+@@html:<img src="media/langserver-url.svg" height="350px"/>@@
 
 
 * Links
 
-@@html:<img src="media/presentation_url_qr.svg" heigh="150%"/>@@
+@@html:<img src="media/presentation_url_qr.svg" height="300px"/>@@
 
 @@html:<i class="fa-solid fa-person-chalkboard"></i>@@ [[https://github.com/dcermak/self-abolishment-of-enterprise-linux-distro][=github.com/dcermak/self-abolishment-of-enterprise-linux-distro=]]
 
