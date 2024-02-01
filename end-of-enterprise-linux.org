@@ -87,10 +87,11 @@ Dan Čermák
 
 #+ATTR_REVEAL: :frag (appear)
 1. fewer and outdated packages + missing dependencies
-2. fewer users
-3. less interesting development target
-4. less interesting deployment target
-5. =GOTO 1=
+2. less interesting development target
+3. less interesting deployment target
+4. fewer users
+5. less 💰 for development
+6. =GOTO 1=
 
 
 ** Containers to the rescue!
@@ -101,7 +102,10 @@ Dan Čermák
 ** Modularity to the rescue!
 
 #+ATTR_REVEAL: :frag appear :frag_idx 1
-@@html:<img src="./media/lego-distro.svg"/>@@
+Let's build a Lego-style distro!
+
+#+ATTR_REVEAL: :frag appear :frag_idx 2
+@@html:<img src="./media/lego-distro.svg" height="400px"/>@@
 
 #+REVEAL: split
 
