@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Generated on 2026-08-17 Mon 06:22 -->
 <meta charset="utf-8"/>
 <title>The self-abolition of Enterprise Linux Distributions</title>
 <meta name="author" content="Dan Čermák"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
@@ -16,22 +15,13 @@
 <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"/>
 
 <link rel="stylesheet" href="./custom-style.css"/>
-<link rel="stylesheet" href="./node_modules/reveal.js/plugin/highlight/zenburn.css"/>
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = './node_modules/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
+<link rel="stylesheet" href="./node_modules/reveal.js/dist/plugin/highlight/zenburn.css"/>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="title">The self-abolition of Enterprise Linux Distributions</h2>
+<section id="sec-title-slide">
+<h2 class="title">The self-abolition of Enterprise Linux Distributions</h2>
 <p class="subtitle" style="color: Gray;"></p>
 <p class="author">Dan Čermák</p>
 <div style="float:left"><a href="https://connect.centos.org/" target="_blank"><img src="./media/Centos-logo-2022.svg" height="50px" style="margin-bottom:-12px"/> Connect 2024</a></div>
@@ -39,8 +29,8 @@
 CC BY 4.0 <i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-by"></i></a></p></div>
 </section>
 <section>
-<section id="slide-orgd65d230">
-<h2 id="orgd65d230">who -u</h2>
+<section id="slide-orge791c3e">
+<h2 id="orge791c3e">who -u</h2>
 <p>
 Dan Čermák
 </p>
@@ -62,20 +52,20 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-orgda8527e">
-<h2 id="orgda8527e">Agenda</h2>
+<section id="slide-org7f9a487">
+<h2 id="org7f9a487">Agenda</h2>
 <ul>
-<li><a href="#/slide-orgf3d5b2a">Where are we now?</a></li>
-<li><a href="#/slide-org360681f">The vicious cycle</a></li>
-<li><a href="#/slide-org642c057">Ways forward?</a></li>
-<li><a href="#/slide-orgab93b8f">Questions? / Discussion</a></li>
+<li><a href="#/slide-org7ff8eef" class="forwardlink">Where are we now?</a></li>
+<li><a href="#/slide-org09bb177" class="forwardlink">The vicious cycle</a></li>
+<li><a href="#/slide-org6038d55" class="forwardlink">Ways forward?</a></li>
+<li><a href="#/slide-org5d9ba0f" class="forwardlink">Questions? / Discussion</a></li>
 
 </ul>
 </section>
 </section>
 <section>
-<section id="slide-org801e003">
-<h2 id="org801e003">Where did we start?</h2>
+<section id="slide-org44433d8">
+<h2 id="org44433d8">Where did we start?</h2>
 <ul>
 <li class="fragment appear">Pet servers</li>
 <li class="fragment appear">Software runs from system packages</li>
@@ -86,8 +76,8 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-orgf3d5b2a">
-<h2 id="orgf3d5b2a">Where are we now?</h2>
+<section id="slide-org7ff8eef">
+<h2 id="org7ff8eef">Where are we now?</h2>
 <ul>
 <li data-fragment-index="1" class="fragment appear">Cattle servers</li>
 <li data-fragment-index="2" class="fragment appear">Rapid development</li>
@@ -102,8 +92,8 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-orgb8adac5">
-<h2 id="orgb8adac5">What's the problem?</h2>
+<section id="slide-org0471739">
+<h2 id="org0471739">What's the problem?</h2>
 <ul data-fragment-index="1" class="fragment appear">
 <li>LTS maintenance harder/more expensive</li>
 
@@ -124,8 +114,8 @@ Dan Čermák
 </section>
 </section>
 <section>
-<section id="slide-org360681f">
-<h2 id="org360681f">The vicious cycle</h2>
+<section id="slide-org09bb177">
+<h2 id="org09bb177">The vicious cycle</h2>
 <ol>
 <li class="fragment appear">fewer and outdated packages + missing dependencies</li>
 <li class="fragment appear">less interesting development target</li>
@@ -136,14 +126,14 @@ Dan Čermák
 
 </ol>
 </section>
-<section id="slide-orge501912">
-<h3 id="orge501912">Containers to the rescue!</h3>
+<section id="slide-org1785d82">
+<h3 id="org1785d82">Containers to the rescue!</h3>
 <p>
 <img src="./media/the-pod-man.png" height="500px"/>
 </p>
 </section>
-<section id="slide-orgdc60a0b">
-<h3 id="orgdc60a0b">Modularity to the rescue!</h3>
+<section id="slide-org79b6525">
+<h3 id="org79b6525">Modularity to the rescue!</h3>
 <p data-fragment-index="1" class="fragment appear">
 Let's build a Lego-style distro!
 </p>
@@ -153,21 +143,21 @@ Let's build a Lego-style distro!
 </p>
 
 </section>
-<section id="slide-orgdc60a0b-split">
+<section>
 
 <p>
 <img src="./media/factory-ring0.png"/>
 </p>
 </section>
-<section id="slide-orgff0cedd">
-<h3 id="orgff0cedd">So should we just give up?</h3>
+<section id="slide-orga812b08">
+<h3 id="orga812b08">So should we just give up?</h3>
 <p data-fragment-index="1" class="fragment appear">
 But we are still adding value
 </p>
 
 <div class="org-src-container">
 
-<pre  class="fragment appear" data-fragment-index="2"  ><code class="console" >❯ podman run --rm -it docker.io/aquasec/trivy \
+<pre data-fragment-index="2" class="fragment appear"><code class="console" >❯ podman run --rm -it docker.io/aquasec/trivy \
     image docker.io/library/golang:1.21
 
 docker.io/library/golang:1.21 (debian 12.4)
@@ -177,11 +167,11 @@ Total: 349 (UNKNOWN: 0, LOW: 245, MEDIUM: 74, HIGH: 29, CRITICAL: 1)
 </div>
 
 </section>
-<section id="slide-orgff0cedd-split">
+<section>
 
 <div class="org-src-container">
 
-<pre   ><code class="console" >❯ podman run --rm -it docker.io/aquasec/trivy \
+<pre><code class="console" >❯ podman run --rm -it docker.io/aquasec/trivy \
     image registry.suse.com/bci/golang:1.21
 
 registry.suse.com/bci/golang:1.21 (suse linux enterprise server 15.5)
@@ -190,8 +180,8 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 </code></pre>
 </div>
 </section>
-<section id="slide-org262e5c3">
-<h3 id="org262e5c3">Integrations &amp; Support</h3>
+<section id="slide-org61f8179">
+<h3 id="org61f8179">Integrations &amp; Support</h3>
 <p>
 <table class="fragment appear" data-fragment-index="0">
 <tr><td align="center" valign="middle"><img src="media/Ansible_logo.svg" height="100px"/></td>
@@ -200,8 +190,8 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 <td align="center" valign="middle"><img src="media/juju-logo.svg" height="100px"/></td></tr></table>
 </p>
 </section>
-<section id="slide-org9996aa4">
-<h3 id="org9996aa4">Build Tools</h3>
+<section id="slide-orgf2076a6">
+<h3 id="orgf2076a6">Build Tools</h3>
 <p>
 <table class="fragment appear" data-fragment-index="0">
 <tr><td align="center" valign="middle"><img src="media/OpenShift-LogoType.svg" height="100px"/></td>
@@ -210,14 +200,14 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 </section>
 </section>
 <section>
-<section id="slide-org642c057">
-<h2 id="org642c057">Ways forward?</h2>
+<section id="slide-org6038d55">
+<h2 id="org6038d55">Ways forward?</h2>
 <p>
 <img src="media/way-forward.png" width="500px"/>
 </p>
 </section>
-<section id="slide-org17c7e53">
-<h3 id="org17c7e53">Devtools</h3>
+<section id="slide-org9d15222">
+<h3 id="org9d15222">Devtools</h3>
 <aside class="notes">
 <ul>
 <li>Ubuntu won by capturing all devs &rArr; have to ensure all tools are there</li>
@@ -238,8 +228,8 @@ Focus on development tools!
 <img src="media/lookaside-registry.svg"/>
 </p>
 </section>
-<section id="slide-orgc046f08">
-<h3 id="orgc046f08">Limited Modularity</h3>
+<section id="slide-org088965a">
+<h3 id="org088965a">Limited Modularity</h3>
 <aside class="notes">
 <ul>
 <li>prohibit testing matrix "explosion" by combining language stacks together</li>
@@ -259,8 +249,8 @@ Modularity again?
 </section>
 </section>
 <section>
-<section id="slide-org0733cd5">
-<h2 id="org0733cd5">Commercial Break</h2>
+<section id="slide-org1f295ee">
+<h2 id="org1f295ee">Commercial Break</h2>
 <p data-fragment-index="1" class="fragment appear">
 Do you have to edit RPM Spec files?
 </p>
@@ -279,8 +269,8 @@ Annoyed by poor editor support?
 </section>
 </section>
 <section>
-<section id="slide-orgce5eaad">
-<h2 id="orgce5eaad">Links</h2>
+<section id="slide-org3f40cbf">
+<h2 id="org3f40cbf">Links</h2>
 <p>
 <img src="media/presentation_url_qr.svg" height="300px"/>
 </p>
@@ -295,25 +285,45 @@ Annoyed by poor editor support?
 </section>
 </section>
 <section>
-<section id="slide-orgab93b8f">
-<h2 id="orgab93b8f">Questions? / Discussion</h2>
+<section id="slide-org5d9ba0f">
+<h2 id="org5d9ba0f">Questions? / Discussion</h2>
 </section>
 </section>
 </div>
 </div>
 <script src="./node_modules/reveal.js/dist/reveal.js"></script>
-<script src="./node_modules/reveal.js/plugin/highlight/highlight.js"></script>
-<script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
-
-
+<script src="./node_modules/reveal.js/dist/plugin/highlight.js"></script>
+<script src="./node_modules/reveal.js/dist/plugin/notes.js"></script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-plugins: [RevealHighlight, RevealNotes, history],
-transition: 'none', hash: true
-});
 
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: false,
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: true,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'none',
+transitionSpeed: 'default',
+hash: true,
+
+// Plugins with reveal.js 4.x and later
+plugins: [ RevealHighlight, RevealNotes ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
 </script>
 </body>
 </html>
